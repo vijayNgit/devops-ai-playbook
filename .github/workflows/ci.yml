@@ -60,7 +60,7 @@ jobs:
           echo "Pushing $IMAGE_URI"
           docker push $IMAGE_URI
 
-update-manifests:
+  update-manifests:
     runs-on: ubuntu-latest
     needs: build-and-push
     permissions:
